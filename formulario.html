@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" type="text/css" href="formulario.css" media="screan"> 
+    <script src="formulario.css"></script>
 </head>
 <body>
     <div>
@@ -15,20 +15,20 @@
 
     <form action="">
         <fieldset class="grupo">
-            <div>
+            <div class="campo">
                 <label for="nome"><strong>Nome</strong></label>
                 <input type="text" name="nome" id="nome" required>
             </div>
-            <div>
+            <div class="campo">
                 <label for="Sobrenome"><strong>Sobrenome</strong></label>
                 <input type="text" name="Sobrenome" id="Sobrenome" required>
             </div>
         </fieldset>
-        <div>
+        <div class="campo">
             <label for="mail"><strong>E-mail</strong></label>
             <input type="email" name="email" id="email" required>
         </div>
-        <div>
+        <div class="campo">
             <label for=""><strong>De qual lado da aplicação você desenvolve?</strong></label>
            <label for="">
             <input type="radio" name="devweb" value="frontend">Front-end
@@ -39,7 +39,7 @@
                 <input type="radio" name="devweb" value="fullstack">Fullstack
             </label>
         </div>
-        <div>
+        <div class="campo">
             <label for="senioridade"><strong>Senioridade</strong></label>
              <select id="Senioridade">
                 <option selected disabled value="">Selecione:</option>
@@ -49,7 +49,7 @@
              </select>
         </div>
         <fieldset class="grupo">
-            <div>
+            <div id="check">
                 <label for=""><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
                 <input type="checkbox" nome="tecnologia1" id="tecnologia1" value="HTML">
                 <label for="tecnologia1">HTML</label>
@@ -67,7 +67,7 @@
                 <label for="tecnologia7">Java</label>
             </div>
         </fieldset>
-        <div>
+        <div class="campo">
             <br>
             <label for=""><strong>Conte um pouco de sua experiência:</strong></label>
             <textarea name="experiência" id="experiência" cols="30" rows="10" style="width: 26em;"></textarea>
